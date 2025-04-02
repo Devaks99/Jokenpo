@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -32,6 +32,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    grid-template-columns: 1fr 300px;
 }
 
 h1 {
@@ -45,7 +46,7 @@ h1 {
 
 .choices {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     max-width: 500px;
     flex-wrap: nowrap;
@@ -117,45 +118,61 @@ button img {
     filter: invert(1);
 }
 
-#resultado{
+/* Seção do jogo */
+.game-section {
+    grid-column: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    font-size: 1rem;
-    margin: 0 auto;
-    padding: 1rem;
-    margin-top: -20px;
-    max-width: 100%;
+}
+
+.result-section {
+    grid-column: 2;
+    position: static;
+    top: 20px;
+    height: fit-content;
+}
+
+.result-content {
+    margin-top: 2rem;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border: 2px solid #e74c3c;
+    max-width: 600px;
 }
 
 .result {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 80px;
     font-size: 1.5rem;
     margin: 2rem 0;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     animation: fadeIn 0.5s ease;
 }
 
-.result-content {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 2rem;
-}
-
 .result-image {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
-    display: none;
-    animation: pulse 1s ease;
+    border-radius: 15px;
+    border: 2px solid #e74c3c;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
 }
 
 .result-text h3 {
@@ -169,6 +186,11 @@ button img {
     font-size: 2.5rem;
     color: #e74c3c;
     text-shadow: 0 0 15px rgba(231, 76, 60, 0.5);
+}
+
+/* Remove as classes de grid */
+.game-section, .result-section {
+    display: contents; /* Elimina a divisão anterior */
 }
 
 

@@ -31,7 +31,7 @@ function jogar(escolhaJogador) {
 
     if (escolhaJogador === escolhaComputador) {
         resultadoHTML = `
-            <img src="https://cdn.awsli.com.br/600x1000/761/761999/produto/148205741447ff2d44a.jpg" class="result-image">
+            <img src="img/empate.png" class="result-image">
             <div class="result-text">
                 <h3>EMPATE!</h3>
                 <p>Ambos escolheram <strong>${escolhaJogador}</strong></p>
@@ -39,7 +39,7 @@ function jogar(escolhaJogador) {
         `;
     } else if (combinacoes[escolhaJogador].vence === escolhaComputador) {
         resultadoHTML = `
-            <img src="https://cdn-icons-png.flaticon.com/512/1634/1634146.png" class="result-image">
+            <img src="img/vencedor.png" class="result-image">
             <div class="result-text">
                 <h3>${nomeJogador.toUpperCase()} VENCEU!</h3>
                 <p>${combinacoes[escolhaJogador].texto}</p>
@@ -48,7 +48,7 @@ function jogar(escolhaJogador) {
         `;
     } else {
         resultadoHTML = `
-            <img src="https://cdn-icons-png.flaticon.com/512/1634/1634139.png" class="result-image">
+            <img src="img/computador.png" class="result-image">
             <div class="result-text">
                 <h3>VITÓRIA DO COMPUTADOR!</h3>
                 <p>${combinacoes[escolhaComputador].texto}</p>
