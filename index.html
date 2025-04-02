@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔺 Jokenpô Round 6 🔺</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pra ganhar é preciso arriscar!</h1>
+        <p>Pedra, Papel ou Tesoura?</p>
+        <input type="text" id="nome" class="custom-input" placeholder="Digite seu nome">
+
+        <div class="choices">
+
+            <div id="jogo" class="hidden">
+                <p id="mensagem"></p>
+                <div class="botoes">
+                    <button onclick="jogar('pedra')">⚫ Pedra</button>
+                    <button onclick="jogar('papel')">📜 Papel</button>
+                    <button onclick="jogar('tesoura')">✂️ Tesoura</button>
+                </div>
+                <p id="resultado"></p>
+            </div>
+
+        <div class="result" id="resultado"></div> 
+       
+    
+    <!-- <p id="resultado"></p> -->
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
