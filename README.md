@@ -1,5 +1,5 @@
-```markdown
-# ✊✋✌️ Jokenpô - Pedra, Papel e Tesoura
+
+# ✊✋✌️ Jokenpô - Pedra, Papel e Tesoura - Jogo
 
 ![logo jokenpo](https://github.com/user-attachments/assets/d4240dee-d390-436b-9f93-10adccce89a6)
 
