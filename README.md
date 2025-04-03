@@ -1,7 +1,8 @@
 ```markdown
 # ✊✋✌️ Jokenpô - Pedra, Papel e Tesoura
 
-![pontedecristal](https://github.com/user-attachments/assets/b638d5df-4ebf-40fc-b62a-ffe559bdbb6b)
+![logo jokenpo](https://github.com/user-attachments/assets/d4240dee-d390-436b-9f93-10adccce89a6)
+
 
 
 Um jogo clássico de **Pedra, Papel e Tesoura** ⚫📄✂️ desenvolvido com HTML, CSS e JavaScript. O usuário desafia a máquina em partidas rápidas com escolhas aleatórias. Design moderno, responsivo e interativo!
