@@ -1,73 +1,97 @@
-✊✋✌ Jokenpô - Pedra, Papel e Tesoura
+```markdown
+# ✊✋✌️ Jokenpô - Pedra, Papel e Tesoura
+
+![pontedecristal](https://github.com/user-attachments/assets/b638d5df-4ebf-40fc-b62a-ffe559bdbb6b)
 
 
-Um jogo clássico de Pedra, Papel e Tesoura ⚫📄✂ desenvolvido com HTML, CSS e JavaScript. O usuário joga contra a máquina, que faz escolhas aleatórias. O jogo apresenta um design moderno e responsivo!
-
----
-
-**🎮 Como Jogar**
-Escolha entre Pedra ⚫, Papel 📄 ou Tesoura ✂ clicando no botão correspondente.
-
-O computador escolherá aleatoriamente uma opção.
-O resultado será exibido na tela, informando se você ganhou 🏆, perdeu ❌ ou empatou 🔄.
-Jogue quantas vezes quiser e tente vencer a máquina! 😃
+Um jogo clássico de **Pedra, Papel e Tesoura** ⚫📄✂️ desenvolvido com HTML, CSS e JavaScript. O usuário desafia a máquina em partidas rápidas com escolhas aleatórias. Design moderno, responsivo e interativo!
 
 ---
 
-**📸 Screenshots**
-🖥️ Tela Inicial:
-<img src="screenshot1.png" width="600">
-🎮 Escolha do Usuário:
-<img src="screenshot2.png" width="600">
-🏆 Resultado do Jogo:
-<img src="screenshot3.png" width="600">
+## 🎮 **Como Jogar**
+
+- Escolha entre **Pedra ⚫**, **Papel 📄** ou **Tesoura ✂️** clicando nos botões correspondentes.
+- O computador fará uma escolha aleatória automaticamente 🖥️.
+- O resultado é exibido imediatamente, indicando se você **ganhou 🏆**, **perdeu ❌** ou **empatou 🔄**.
+- Jogue quantas vezes quiser e domine as estratégias para vencer! 😎
 
 ---
 
-**🛠 Tecnologias Utilizadas**
--HTML5 → Estrutura da página 📄
--CSS3 → Estilização e responsividade 🎨
--JavaScript (JS) → Lógica do jogo e interação 🎮
+## 📸 **Screenshots**
+
+
+### 🖥️ Tela Inicial  
+![tela 1 jokenpo](https://github.com/user-attachments/assets/2ad6d7d4-d318-4415-bb0d-15d9aec6ee99)
+
+
+### 🎮 Escolha do Usuário  
+![tela 2 jokenpo](https://github.com/user-attachments/assets/93a31c3a-570b-437a-842b-7ac135ee93ca)
+
+
+### 🏆 Resultado  
+![tela 3 jokenpo](https://github.com/user-attachments/assets/736feee4-1ea2-4ab3-b269-f7c298ea1b40)
+![tela 4 jokenpo](https://github.com/user-attachments/assets/3007b96a-a5bd-4e7a-b198-cf5962c00fce)
+![tela 5 jokenpo](https://github.com/user-attachments/assets/dc61bf82-29fe-4e63-b261-1f755becf995)
+
 
 ---
 
-**📂 Estrutura de Arquivos**
+## 🛠 **Tecnologias Utilizadas**
 
+- **HTML5**: Estrutura semântica e componentes da interface 📄.
+- **CSS3**: Estilização avançada, animações e design responsivo 🎨.
+- **JavaScript**: Lógica do jogo, gerenciamento de estados e interatividade 🎮.
+
+---
+
+## 📂 **Estrutura de Arquivos**
+
+```
 📂 jokenpo/
-│── 📄 index.html    # Estrutura principal do jogo
-│── 🎨 style.css     # Estilização do jogo
-│── 🎮 script.js     # Lógica do Jokenpô
-│── 📸 screenshot1.png  # Imagem da tela inicial
-│── 📸 screenshot2.png  # Imagem da escolha do usuário
-│── 📸 screenshot3.png  # Imagem do resultado do jogo
+├── 📄 index.html          # Página principal
+├── 🎨 style.css           # Estilos e animações
+├── 🎮 script.js           # Regras e lógica do jogo
+├── 📸 screenshot1.png     # Captura de tela - Menu
+├── 📸 screenshot2.png     # Captura de tela - Jogada
+└── 📸 screenshot3.png     # Captura de tela - Resultado
+```
 
 ---
 
-**🚀 Como Rodar o Projeto**
+## 🚀 **Como Executar**
 
-1. Clone o repositório:
-git clone https://github.com/Devaks99/Jokenpo.git
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/Devaks99/Jokenpo.git
+   ```
 
-2. Acesse a pasta do projeto:
- cd jokenpo
+2. **Acesse a pasta do projeto**:
+   ```bash
+   cd jokenpo
+   ```
 
-3. Abra o arquivo index.html no navegador!
-
----
-
-**📌 Funcionalidades**
-✔ Escolha entre Pedra 🪨, Papel 📄 ou Tesoura ✂
-✔ Computador escolhe uma opção aleatória 🤖
-✔ Exibe o resultado com animações e efeitos visuais ✨
-✔ Placar de vitórias, derrotas e empates 🔢
-✔ Design moderno e responsivo 📱💻
+3. **Abra o jogo no navegador**:
+   - Dê um duplo clique no arquivo `index.html` ou use um servidor local.
 
 ---
 
-📜 Licença
-Este projeto está sob a licença MIT 📝.
+## 📌 **Funcionalidades Destacadas**
 
-📌 Feito com ❤️ por Ana Karla (Devaks99).
+- ✅ Sistema de escolha **instantânea** para jogador e máquina.
+- ✅ **Placar dinâmico** com contagem de vitórias, derrotas e empates.
+- ✅ **Animações suaves** e feedback visual após cada rodada.
+- ✅ Design **100% responsivo** (funciona em celulares, tablets e PCs).
+- ✅ Interface intuitiva com **emoji-icons** para melhor experiência.
 
+---
 
+## 📜 **Licença**
+
+Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+**🎯 Desenvolvido com ❤️ por [Ana Karla (Devaks99)](https://github.com/Devaks99)**  
+*✨ "Divirta-se enquanto testa sua sorte contra o algoritmo!" ✨*
+```
 
