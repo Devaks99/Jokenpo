@@ -14,59 +14,40 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    /* overflow: hidden; */
 }
 
 .container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 2rem;
     width: 100%;
     max-width: 730px;
-    max-height: 700px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    grid-template-columns: 1fr 300px;
 }
 
 h1 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     color: #e74c3c;
+    text-align: center;
 }
 
-.choices {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 500px;
-    flex-wrap: nowrap;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.choice-group {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    width: 100%;
+p {
+    font-size: 1.2rem;
 }
 
 .custom-input {
     width: 100%;
     max-width: 400px;
     padding: 15px 20px;
-    margin: 20px 0;
     font-size: 1.2rem;
     border: 2px solid #e74c3c;
     border-radius: 10px;
@@ -81,7 +62,15 @@ h1 {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.botoes{
+.game-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    gap: 2rem;
+}
+
+.botoes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,13 +86,7 @@ button {
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
     min-width: 140px;
-    position: relative;
-    margin: 0 1rem;
 }
 
 button:hover {
@@ -112,145 +95,184 @@ button:hover {
     box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
 }
 
-button img {
-    width: 50px;
-    height: 50px;
-    filter: invert(1);
-}
-
-/* Seção do jogo */
-.game-section {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.result-section {
-    grid-column: 2;
-    position: static;
-    top: 20px;
-    height: fit-content;
-}
-
+/* Estilo do resultado */
 .result-content {
-    margin-top: 2rem;
+    flex: 1;
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 1.5rem;
-    margin: 1rem 0;
+    justify-content: center;
     background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
     border-radius: 15px;
-    border: 2px solid #e74c3c;
-    max-width: 600px;
+    /* border: 2px solid #e74c3c; */
+    max-width: 300px;
+    width: 300px;  
+    height: 350px; 
+    overflow: hidden;
 }
+
+.result-content img {
+    width: 80%;  
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;  
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
 
 .result {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     min-height: 80px;
-    font-size: 1.5rem;
-    margin: 2rem 0;
-    gap: 1rem;
+    font-size: 1rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     animation: fadeIn 0.5s ease;
 }
 
-.result-image {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    border-radius: 15px;
-    border: 2px solid #e74c3c;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 10px;
-}
-
-.result-text h3 {
-    color: #e74c3c;
+/* Estilização do título e do texto dentro do result-content */
+.result-title {
     font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.vs-text {
-    font-size: 2.5rem;
+    font-weight: bold;
     color: #e74c3c;
-    text-shadow: 0 0 15px rgba(231, 76, 60, 0.5);
+    text-align: center;
 }
 
-/* Remove as classes de grid */
-.game-section, .result-section {
-    display: contents; /* Elimina a divisão anterior */
+.result-text {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+result-title, 
+.result-text {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+}
+
+/* Espaçamento vertical entre o título e o texto */
+.result-content h3,
+.result-content p {
+    margin-bottom: 10px; 
 }
 
 
-@keyframes pulse {
-    0% { transform: scale(0.9); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+
+/* Input Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Botão de adicionar */
+.add-btn {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #c0392b;
 }
 
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Ajuste para telas menores */
+/* 🔹 Responsividade para tablets e telas menores */
 @media (max-width: 768px) {
-    .choices {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .game-wrapper {
+        flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2rem;
     }
     
-    button {
-        width: 100%;
-        max-width: 300px;
-        padding: 1.2rem;
-    }
-
-    .custom-input {
-        max-width: 300px;
-        padding: 12px 15px;
+    .botoes {
+        align-items: center;
     }
 
     .result-content {
-        flex-direction: column;
-        gap: 1rem;
+        max-width: 100%;
     }
-    
-    .result-image {
-        width: 100px;
-        height: 100px;
+
+    button {
+        width: 80%;
+        max-width: 170px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
     }
 }
 
+/* 🔹 Responsividade para celulares pequenos (abaixo de 480px) */
 @media (max-width: 480px) {
     .container {
-        gap: 1.5rem;
         padding: 1.5rem;
         border-radius: 12px;
+        width: 90%;
     }
     
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
         text-align: center;
     }
     
+    .game-wrapper {
+        gap: 1rem;
+    }
+    
     button {
+        width: 50%;
+        font-size: 0.9rem;
         padding: 0.8rem;
+    }
+
+    .result-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .result-content img {
+        width: 70%;
+        max-width: 180px;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; /* Menor espaçamento */
+        width: 100%;
+    }
+
+    .custom-input {
+        flex-grow: 1; /* Faz o input ocupar mais espaço */
+        max-width: none;
+        padding: 12px 15px; 
         font-size: 1rem;
+    }
+
+    .add-btn {
+        width: 80px; /* Reduz a largura do botão */
+        padding: 10px 12px; 
+        font-size: 0.9rem;
+        min-width: 30px;
     }
 }
